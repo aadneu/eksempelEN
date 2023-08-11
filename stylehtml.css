@@ -1,0 +1,62 @@
+body {
+    margin-left: 20px;
+}
+.box {
+  width: 500px;
+  background-color: lightgray;
+  border: 1px solid darkgray;
+  margin-top: 10px;
+}
+.innerbox {
+  padding: 10px;
+}
+.innerbox2 {
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  font-size: x-large;
+  padding: 1% 0;
+  border: 1px solid grey;
+  user-select: none;
+    
+}
+
+.green {
+  background-color: rgb(89, 209, 89);
+
+}
+.blue {
+  background-color: rgb(75, 75, 233);
+
+}
+.red {
+  background-color: rgb(224, 48, 48);
+
+}
+.yellow {
+  background-color: rgb(228, 199, 37);
+
+}
+.black {
+  background-color: rgb(70, 70, 70);
+}
+.p {
+  padding-left: 10px;
+}
+
+.vertikal {
+  display: grid;
+}
+
+.horisontal {
+  display: flex;
+  align-items: start;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}

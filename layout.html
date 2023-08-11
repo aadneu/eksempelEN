@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylehtml.css">
+
+</head>
+
+<body>
+    <button onclick="ingen()">Ingen layout</button>
+    <button onclick="vertikal()">Vertikal layout</button>
+    <button onclick="horisontal()">Horisontal layout</button>
+    <button onclick="grid()">Grid layout</button>
+    <button onclick="document.getElementById('eple').innerHTML=''">Ta bort eksempel</button>
+
+    <h1 id="eple">Eksempel 1</h1>
+    <div id="layout">
+        <div class="box">
+            <div class="header green" onclick="test1()"> Verktøy </div>
+            <div id="grønnverktøy">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="header blue" onclick="test2()">HTML</div>
+            <div id="blå">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="header red" onclick="test3()">CSS</div>
+            <div id="rød">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function vertikal(){
+            document.getElementById('layout').classList = [];
+            document.getElementById('layout').classList.add('vertikal');
+
+        }
+        function horisontal(){
+            document.getElementById('layout').classList = [];
+            document.getElementById('layout').classList.add('horisontal');
+
+        }
+        function grid(){
+            document.getElementById('layout').classList = [];
+            document.getElementById('layout').classList.add('grid');
+
+        }
+        function ingen(){
+           
+
+        }
+    </script>
+
+</body>
+
+</html>
